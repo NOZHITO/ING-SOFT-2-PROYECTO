@@ -65,7 +65,7 @@ def login():
 @jwt_required()
 def get_me():
     user_id = get_jwt_identity()  # ← Este devuelve el ID del token
-    print("🧩 ID desde token:", user_id)
+    print("ID desde token:", user_id)
 
     # Convertimos a int si fuera necesario
     try:
